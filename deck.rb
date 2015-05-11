@@ -2,7 +2,6 @@ require 'card'
 
 class Deck < Card
 
-
   def initialize
     @cards = []
     
@@ -19,10 +18,6 @@ class Deck < Card
       @cards << Card.new(suit, 11, "Ace")
     end
   end
-
- # def rej
-  #  @cards.reject { |i| i == /#/}
-  #end
 
   def shuffle
     @cards.shuffle!
